@@ -39,7 +39,10 @@ trap "cd ${WORKDIR}; exit" INT TERM EXIT
 declare -A PATH_MAP
 PATH_MAP=(									\
 	[tools/lib/bpf]=src							\
+	[tools/include/uapi/asm/bpf_perf_event.h]=include/uapi/asm/bpf_perf_event.h	\
+	[tools/include/uapi/asm-generic/bpf_perf_event.h]=include/uapi/asm-generic/bpf_perf_event.h	\
 	[tools/include/uapi/linux/bpf_common.h]=include/uapi/linux/bpf_common.h	\
+	[tools/include/uapi/linux/bpf_perf_event.h]=include/uapi/linux/bpf_perf_event.h	\
 	[tools/include/uapi/linux/bpf.h]=include/uapi/linux/bpf.h		\
 	[tools/include/uapi/linux/btf.h]=include/uapi/linux/btf.h		\
 	[tools/include/uapi/linux/fcntl.h]=include/uapi/linux/fcntl.h		\
